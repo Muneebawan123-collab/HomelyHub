@@ -42,18 +42,18 @@ body {
 }
 
 .f-info-socials i {
-    margin-right: 1rem;
     font-size: 1.2rem;
+    margin-right: 1rem;
 }
 
 .f-info {
-    text-align: center;
-    height: 8rem;
-    background-color: #ebebeb;
     display: flex;
     flex-wrap: wrap; /* If we want all things comes in different line. */
-    justify-content: center; /* Things are place at center */
-    align-items: space-evenly;
+    justify-content: center;
+    height: 8rem;
+    background-color: #F1F1F1;
+    text-align: center;
+    width: 100%;
 }
 
 /* Cards */
@@ -115,21 +115,6 @@ body {
     padding-right: 0;
 }
 
-
-
-footer {
-    background-color: #f1f1f1; /* Use the grey color you want */
-    padding: 20px;
-    text-align: center; /* Center the text */
-}
-
-.f-info {
-    display: flex;
-    justify-content: space-between; /* Distribute the items */
-    align-items: center; /* Vertically center the items */
-    flex-wrap: wrap; /* Allows the items to wrap on smaller screens */
-}
-
 .f-info-socials i {
     margin: 0 10px; /* Add some space between the icons */
     font-size: 24px; /* Adjust the icon size */
@@ -152,4 +137,10 @@ footer {
 
 .f-info-brand {
     margin-top: 10px; /* Adjust margin to position correctly */
+}
+
+/* Map */
+#map {
+    height: 400px;
+    width: 60vp;
 }

@@ -24,7 +24,8 @@ router.route("/:id")
 // Show individual listing
 .get(wrapAsync(listingController.showListing)) 
 // Update a listing
-.put(isLoggedIn, isOwner, validateListing, wrapAsync(listingController.updateListing)
+.put(isLoggedIn, isOwner, upload.single('listing[image]'),// multer first parse & then save on cloudinary then after we validating our listing.
+ validateListing, wrapAsync(listingController.updateListing)
 )
 // Delete a listing
 .delete(isLoggedIn, isOwner, wrapAsync(listingController.destroyListing)
