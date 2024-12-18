@@ -28,8 +28,8 @@ const dbUrl = process.env.ATLASDB_URL;
 
 async function main() {
     await mongoose.connect(dbUrl, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
+        //useNewUrlParser: true,
+        //useUnifiedTopology: true
     });
 }
 
